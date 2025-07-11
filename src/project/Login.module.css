@@ -1,0 +1,90 @@
+/* LogIn.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background: #ffffff;
+    color: #333;
+    /*padding: 2rem;*/
+    padding-right: 20px;
+    padding-left: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+}
+
+input:focus {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+button {
+    background: #805608d4;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*transition: background 0.3s ease;*/
+}
+
+button:hover {
+    background: #3d2e13f3;
+}
+
+p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: black;
+}
+
+button:focus {
+    outline: none;
+}
+
+p button {
+
+    color: white;
+    cursor: pointer;
+    font-size: 01rem;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+p button:hover {
+    color: white;
+}

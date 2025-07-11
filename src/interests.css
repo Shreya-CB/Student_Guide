@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  min-height: 100vh;
+  /*background-color: #f0f2f5;*/
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image:url(interest.png);
+}
+  
+  /* Form container */
+form {
+  /*background-color:#bcf2ef ; #bcf2ef*/
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  text-align: left;
+  border-color: aliceblue;
+  border-radius: 20px;
+  border-width: 2px;
+  height:700px;
+  width: 700px;
+}
+  
+  /* Form title */
+h2 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-bottom:30px ;
+}
+
+/* Labels */
+label {
+  font-size: 17px;
+  color:rgb(243, 243, 105);
+}
+
+/* Checkbox items */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.select{
+ width:100%;
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 1px;
+  margin-left: 20px;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border:darkgreen;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color:darkgreen;
+}
+
+/* Spacing and line breaks */
+.section-title {
+  margin-top: 35px;
+  margin-bottom: 13px;
+  font-size: 18px;
+  color:rgba(255, 255, 255, 0.765);
+}
