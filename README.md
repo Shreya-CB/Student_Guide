@@ -7,7 +7,7 @@ A full-stack web application designed to assist students in exploring career pat
 ## 🌐 Live Website
 
 You can access the deployed website here:  
-👉 [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)  
+👉 https://student-guide-nine.vercel.app/
 
 ---
 
