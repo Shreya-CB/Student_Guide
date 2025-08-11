@@ -22,8 +22,9 @@ my-app/
 │
 ├── server/                 # Backend code (Node.js + Express)
 │   └── server.js           # Main backend entry point
-|   └── models              # Models 
+│   └── models              # Models 
 │   └── routes              # API routes and backend logic
+│
 ├── package.json            # Project metadata and shared dependencies
 ├── node_modules/           # Installed npm packages
 ├── .gitignore              # Files to ignore in version control
