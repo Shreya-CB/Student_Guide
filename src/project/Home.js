@@ -118,6 +118,7 @@ function Home() {
                 </div>
                 </a>
                 <a href="/interests">INTERESTS</a>
+                <a href="/chatbot">CHATBOT</a>
                 <a href="/help">HELP</a>
             </nav>
       <div

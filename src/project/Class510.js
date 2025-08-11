@@ -39,6 +39,7 @@ function Class510() {
           </div>
         </a>
         <a href="/interests">INTERESTS</a>
+        <a href="/chatbot">CHATBOT</a>
         <a href="/help">HELP</a>
       </nav>
       <h1>Welcome to the Class 5-10 Page</h1>

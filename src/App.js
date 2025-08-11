@@ -67,8 +67,6 @@ export default App;*/
 /* main app.js for student guide*/
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//import './project/mainstyle.css';
-// In index.js or App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from './project/SignUp';
 import LogIn from './project/LogIn';
@@ -81,6 +79,7 @@ import Medical from './project/Medical';
 import Bca from './project/Bca'
 import CompetitiveExams from './project/CompetitiveExams';
 import Interests from './project/Interests';
+import Chatbot from './project/Chatbot';
 import Help from './project/Help';
 
 function App() {
@@ -107,6 +106,7 @@ function App() {
                 <Route path="/bca" element={<Bca />} />
                 <Route path="/competitiveExams" element={<CompetitiveExams />} />
                 <Route path="/interests" element={<Interests />} />
+                <Route path="/chatbot" element={<Chatbot />} />
                 <Route path="/help" element={<Help />} />
             </Routes>
         </Router>

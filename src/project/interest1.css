@@ -1,0 +1,119 @@
+body {
+  background: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+header h3 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #34495e;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.form-check-label {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+
+.selected-items {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #888;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #2e86de;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1b4f72;
+}
+
+.suggestions-box {
+  margin-top: 35px;
+  border-top: 1px solid #ccc;
+  padding-top: 25px;
+}
+
+.suggestions-box h3 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.suggestion-card {
+  background-color: #f9f9f9;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.suggestion-card:hover {
+  transform: scale(1.01);
+}
+
+.suggestion-card h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #2980b9;
+}
+
+.suggestion-card p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+}

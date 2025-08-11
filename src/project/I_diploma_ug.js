@@ -2,13 +2,34 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './interest1.css';
 
-function IPu() {
-  const [elective, setElective] = useState('');
+function IDiplomaUG() {
+  const [discipline, setDiscipline] = useState([]);
+  const [skills, setSkills] = useState([]);
   const [passion, setPassion] = useState([]);
   const [hobby, setHobby] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
 
-  const electiveOptions = ['PCMB', 'PCMC', 'PCME', 'CEBA', 'SEBA', 'HEPS'];
+  const disciplineOptions = [
+  'Business and Management',
+  'Computer Science Engineering',
+  'Electronics and Communication Engineering',
+  'Electronics and Electrical Engineering',
+  'Civil Engineering',
+  'Mechanical Engineering',
+  'MBBS','B-Pharma','BNYS','Veterinary Science','BCA',
+  'Architecture',
+  'Law and Criminology',
+  'Agriculture',
+  'Journalism'
+  ];
+  const skillsOptions = [
+  'Communication skills',
+  'Problem-solving skills',
+  'Innovation',
+  'Leadership and Teamwork',
+  'Technical skills',
+  'Marketing skills'
+  ];
   const passionOptions = ['music', 'dance', 'art', 'sport', 'food', 'designing'];
   const hobbyOptions = ['reading and writing', 'cooking', 'photography', 'drawing and painting', 'sports', 'music'];
 
@@ -22,9 +43,9 @@ function IPu() {
     e.preventDefault();
 
     try {
-      //console.log('Submitting elective:', elective);
       const res = await axios.post('http://localhost:5000/form/get-suggestions', {
-      elective,
+      discipline,
+      skills,
       passion,
       hobby
     });
@@ -67,18 +88,25 @@ function IPu() {
       <form onSubmit={handleSubmit}>
         
         <div className="dropdown-section">
-          <label className="section-title">Current Elective:</label>
+          <label className="section-title">Current Discipline:</label>
           <select
-            value={elective}
-            onChange={(e) => setElective(e.target.value)}
+            value={discipline}
+            onChange={(e) => setDiscipline(e.target.value)}
             className="form-select"
           >
-            <option value="" disabled>Select elective</option>
-            {electiveOptions.map(opt => (
+            <option value="" disabled>Select discipline</option>
+            {disciplineOptions.map(opt => (
               <option key={opt} value={opt}>{opt}</option>
             ))}
           </select>
         </div>
+
+        <CheckboxGroup 
+          label="Strengths and Skills"
+          options={skillsOptions}
+          selectedValues={skills}
+          onChange={(value) => handleCheckboxChange(value, setSkills)}
+        />
 
         <CheckboxGroup 
           label="Passion"
@@ -118,4 +146,4 @@ function IPu() {
   );
 }
 
-export default IPu;
+export default IDiplomaUG;

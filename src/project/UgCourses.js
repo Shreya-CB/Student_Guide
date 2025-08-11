@@ -48,6 +48,7 @@ const UgCourses = () => {
           </div>
         </a>
         <a href="/interests">INTERESTS</a>
+        <a href="/chatbot">CHATBOT</a>
         <a href="/help">HELP</a>
       </nav>
       <h2>UG COURSES</h2>

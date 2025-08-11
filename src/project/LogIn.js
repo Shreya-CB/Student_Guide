@@ -10,7 +10,7 @@ const LogIn = ({ setIsLoggedIn }) => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/signin', { username, password });
+            const response = await axios.post('http://localhost:5000/auth/signin', { username, password });
             alert(response.data.message);
             localStorage.setItem('user', JSON.stringify(response.data.user));
             setIsLoggedIn(true);
@@ -24,7 +24,7 @@ const LogIn = ({ setIsLoggedIn }) => {
         <div>
             <form onSubmit={handleLogin}>
                 <h2>Log In</h2>
-                Username
+                Username or Email
                 <input 
                     type="text"
                     //placeholder="Username"
@@ -50,4 +50,3 @@ const LogIn = ({ setIsLoggedIn }) => {
 };
 
 export default LogIn;
-

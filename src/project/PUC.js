@@ -39,6 +39,7 @@ const PUC = () => {
               </div>
             </a>
             <a href="/interests">INTERESTS</a>
+            <a href="/chatbot">CHATBOT</a>
             <a href="/help">HELP</a>
           </nav>
             <h1 style={{ textAlign: 'center', color: '#4b6584' }}>Pre-University (PU) Guidance</h1>

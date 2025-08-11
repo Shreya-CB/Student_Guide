@@ -11,7 +11,7 @@ const SignUp = ({ setIsLoggedIn }) => {
     const handleSignUp = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/signup', { username, email, password });
+            const response = await axios.post('http://localhost:5000/auth/signup', { username, email, password });
             alert(response.data.message);
             setIsLoggedIn(true);
             navigate('/home');
@@ -31,7 +31,7 @@ const SignUp = ({ setIsLoggedIn }) => {
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     required
-                />
+                /><br/><br/>
                 Email
                 <input
                     type="email"
@@ -39,7 +39,7 @@ const SignUp = ({ setIsLoggedIn }) => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                />
+                /><br/><br/>
                 Password
                 <input
                     type="password"
@@ -47,7 +47,7 @@ const SignUp = ({ setIsLoggedIn }) => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
-                />
+                /><br/><br/>
                 <button type="submit">Sign Up</button>
             </form>
             <p>
